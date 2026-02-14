@@ -58,16 +58,6 @@ p {
   font-size: 1.05rem;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 12%;
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  background: var(--bg);
-  transition: background 0.3s ease;
-}
 
 .btn {
   padding: 10px 18px;
@@ -118,10 +108,12 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  transition: background 0.3s ease;
   padding: 20px 40px;
   position: sticky;
   top: 0;
-  background-color: var(--bg-color);
   z-index: 1000;
 }
 

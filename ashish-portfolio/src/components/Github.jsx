@@ -1,6 +1,6 @@
 export default function Github() {
   return (
-    <section>
+    <section id="open-source">
       <h2>Open Source & Contributions</h2>
 
       <img

@@ -6,12 +6,32 @@
                 "label": "About"
             },
             {
+                "id": "skills",
+                "label": "Skills"
+            },
+            {
+                "id": "experience",
+                "label": "Experience"
+            },
+            {
                 "id": "projects",
                 "label": "Projects"
             },
             {
-                "id": "performance",
-                "label": "Performance"
+                "id": "certifications",
+                "label": "Certifications"
+            },
+            {
+                "id": "metrics",
+                "label": "Metrics"
+            },
+            {
+                "id": "open-source",
+                "label": "Open Source and Contributions"
+            },
+            {
+                "id": "competetive",
+                "label": "Competetive"
             },
             {
                 "id": "contact",
@@ -47,13 +67,22 @@
     "experience": [
         {
             "id": 1,
-            "role": "Backend Developer Intern",
-            "company": "Tech Company",
-            "duration": "Jan 2024 - Jun 2024",
+            "role": "Associate Software Engineer",
+            "company": "IBM",
+            "duration": "Dec 2023 - Present",
             "description": [
-                "Built scalable REST APIs",
-                "Optimized DB queries reducing latency by 30%",
-                "Implemented caching layer"
+                "Working on JnJ Carepath Project - FULLSTACK (LWC + Apex + Salesforce.com)",
+                "Designed modular Apex service layers to improve maintainability and reusability across business modules.",
+                "Implemented AES-256 encryption for secure URL parameter transmission using Salesforce Crypto Class.",
+                "Built inbound REST integrations using Apex HTTP classes with secure authentication handling.",
+                "Designed dynamic email automation framework integrating backend hub data.",
+                "Implemented configurable theming framework across product groups (600+ files modified, 50K+ LOC).",
+                "Developed fuzzy record matching logic using SOSL/SOQL with custom hashing techniques to enhance data accuracy.",
+                "Created validation rules, custom labels, and custom metadata to reduce hardcoding and improve configurability.",
+                "Ensured scalable query performance with optimized SOQL strategies.",
+                "Recognized multiple times by Delivery Managers for delivering high-impact enterprise features.",
+                "Focus: Secure integrations, configurable architecture, scalability, and maintainability. "
+
             ]
         }
     ],
@@ -96,12 +125,44 @@
     "certifications": [
         {
             "id": 1,
-            "title": "AWS Certified Cloud Practitioner",
-            "organization": "Amazon Web Services",
-            "date": "2024",
-            "credentials": "37643uddsk7i",
-            "link": "https://example.com"
-        }
+            "title": "Salesforce Certified Platform Developer",
+            "organization": "Salesforce",
+            "date": "02/2026  -  02/2027",
+            "credentials": "7442508",
+            "link": "https://sforce.co/verifycerts"
+        },
+        {
+            "id": 2,
+            "title": "Salesforce Certified Administration",
+            "organization": "Salesforce",
+            "date": "05/2024  -  05/2027",
+            "credentials": "4559437",
+            "link": "https://sforce.co/verifycerts"
+        },
+        {
+            "id": 3,
+            "title": "Salesforce Certified AI Associate",
+            "organization": "Salesforce",
+            "date": "08/2024  -  Present",
+            "credentials": "4794770",
+            "link": "https://sforce.co/verifycerts"
+        },
+        {
+            "id": 4,
+            "title": "IBM Techademy Certificate ",
+            "organization": "IBM",
+            "date": "06/2022  -  Present",
+            "credentials": "",
+            "link": ""
+        },
+        {
+            "id": 5,
+            "title": "Responsive Web Design Certification ",
+            "organization": "FreeCodeCamp.org",
+            "date": "01/2023  -  Present",
+            "credentials": "",
+            "link": "https://www.freecodecamp.org/certification/ashish_sah/responsive-web-design"
+        }       
     ],
     "metrics": [
         {
