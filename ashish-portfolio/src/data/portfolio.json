@@ -6,16 +6,32 @@
                 "label": "About"
             },
             {
+                "id": "contact",
+                "label": "Contact"
+            },
+            {
+                "id": "skills",
+                "label": "Skills"
+            },
+            {
+                "id": "experience",
+                "label": "Experience"
+            },
+            {
                 "id": "projects",
                 "label": "Projects"
             },
             {
-                "id": "performance",
-                "label": "Performance"
+                "id": "certifications",
+                "label": "Certifications"
             },
             {
-                "id": "contact",
-                "label": "Contact"
+                "id": "metrics",
+                "label": "Metrics"
+            },
+            {
+                "id": "competitive",
+                "label": "Competitive"
             }
         ]
     },
@@ -47,13 +63,21 @@
     "experience": [
         {
             "id": 1,
-            "role": "Backend Developer Intern",
-            "company": "Tech Company",
-            "duration": "Jan 2024 - Jun 2024",
+            "role": "Associate Software Engineer",
+            "company": "IBM",
+            "duration": "Dec 2023 - Present",
             "description": [
-                "Built scalable REST APIs",
-                "Optimized DB queries reducing latency by 30%",
-                "Implemented caching layer"
+                "Working on JnJ Carepath Project - FULLSTACK (LWC + Apex + Salesforce.com)",
+                "Designed modular Apex service layers to improve maintainability and reusability across business modules.",
+                "Implemented AES-256 encryption for secure URL parameter transmission using Salesforce Crypto Class.",
+                "Built inbound REST integrations using Apex HTTP classes with secure authentication handling.",
+                "Designed dynamic email automation framework integrating backend hub data.",
+                "Implemented configurable theming framework across product groups (600+ files modified, 50K+ LOC).",
+                "Developed fuzzy record matching logic using SOSL/SOQL with custom hashing techniques to enhance data accuracy.",
+                "Created validation rules, custom labels, and custom metadata to reduce hardcoding and improve configurability.",
+                "Ensured scalable query performance with optimized SOQL strategies.",
+                "Recognized multiple times by Delivery Managers for delivering high-impact enterprise features.",
+                "Focus: Secure integrations, configurable architecture, scalability, and maintainability. "
             ]
         }
     ],
@@ -96,11 +120,43 @@
     "certifications": [
         {
             "id": 1,
-            "title": "AWS Certified Cloud Practitioner",
-            "organization": "Amazon Web Services",
-            "date": "2024",
-            "credentials": "37643uddsk7i",
-            "link": "https://example.com"
+            "title": "Salesforce Certified Platform Developer",
+            "organization": "Salesforce",
+            "date": "02/2026  -  02/2027",
+            "credentials": "7442508",
+            "link": "https://sforce.co/verifycerts"
+        },
+        {
+            "id": 2,
+            "title": "Salesforce Certified Administration",
+            "organization": "Salesforce",
+            "date": "05/2024  -  05/2027",
+            "credentials": "4559437",
+            "link": "https://sforce.co/verifycerts"
+        },
+        {
+            "id": 3,
+            "title": "Salesforce Certified AI Associate",
+            "organization": "Salesforce",
+            "date": "08/2024  -  Present",
+            "credentials": "4794770",
+            "link": "https://sforce.co/verifycerts"
+        },
+        {
+            "id": 4,
+            "title": "IBM Techademy Certificate ",
+            "organization": "IBM",
+            "date": "06/2022  -  Present",
+            "credentials": "",
+            "link": ""
+        },
+        {
+            "id": 5,
+            "title": "Responsive Web Design Certification ",
+            "organization": "FreeCodeCamp.org",
+            "date": "01/2023  -  Present",
+            "credentials": "",
+            "link": "https://www.freecodecamp.org/certification/ashish_sah/responsive-web-design"
         }
     ],
     "metrics": [
@@ -125,7 +181,7 @@
             "description": "Implemented LRU eviction to maintain memory efficiency in in-memory store."
         }
     ],
-    "contact": {
+    "footer": {
         "name": "Ashish Sah",
         "headline": "Open to backend, systems, and high-performance engineering roles.",
         "email": "ashish@email.com",
@@ -138,9 +194,127 @@
         "availability": "Available for full-time and contract opportunities worldwide."
     },
     "skills": {
-    "languages": ["C++", "JavaScript", "Python"],
-    "backend": ["Node.js", "Express", "REST APIs"],
-    "databases": ["MySQL", "Redis", "MongoDB"],
-    "tools": ["Git", "Docker", "Linux"]
-  }
+        "languages": [
+            "C++",
+            "JavaScript",
+            "Python",
+            "Apex"
+        ],
+        "backend": [
+            "Salesforce.com",
+            "Node.js",
+            "Express",
+            "REST APIs",
+            "Triggers",
+            "LWC",
+            "Visualforce Pages"
+        ],
+        "databases": [
+            "SOSL",
+            "SOQL",
+            "Redis"
+        ],
+        "tools": [
+            "Git",
+            "Docker",
+            "Custom Metadata"
+        ],
+        "frontend": [
+            "HTML",
+            "CSS"
+        ]
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "I'm always open to discussing new projects, creative ideas, or opportunities in Salesforce and Full-Stack Development.",
+        "links": [
+            {
+                "label": "Email Me",
+                "url": "mailto:ashishyouremail@gmail.com"
+            },
+            {
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/in/your-linkedin"
+            },
+            {
+                "label": "GitHub",
+                "url": "https://github.com/your-github"
+            }
+        ]
+    },
+    "competitive": {
+        "competitiveTitle": "Competitive Programming Profiles",
+        "competitiveProfiles": [
+            {
+                "platform": "LeetCode",
+                "username": "your-username",
+                "url": "https://leetcode.com/your-username"
+            },
+            {
+                "platform": "GeeksforGeeks",
+                "username": "your-username",
+                "url": "https://auth.geeksforgeeks.org/user/your-username"
+            },
+            {
+                "platform": "CodeStudio",
+                "username": "your-username",
+                "url": "https://www.codingninjas.com/codestudio/profile/your-username"
+            }
+        ],
+        "hackathonTitle": "Hackathons & Projects",
+        "hackathons": [
+            {
+                "name": "Gemini 3 Hackathon",
+                "description": "Built AI-powered system solving real-world career matching problems.",
+                "url": "https://devpost.com/your-project"
+            }
+        ],
+        "communityTitle": "Community & Learning",
+        "communityProfiles": [
+            {
+                "platform": "Stack Overflow",
+                "username": "your-id",
+                "url": "https://stackoverflow.com/users/your-id"
+            },
+            {
+                "platform": "freeCodeCamp",
+                "username": "your-username",
+                "url": "https://www.freecodecamp.org/your-username"
+            }
+        ]
+    },
+    "stats": [
+        {
+            "label": "Problems Solved",
+            "value": 700
+        },
+        {
+            "label": "Hackathons Participated",
+            "value": 1
+        },
+        {
+            "label": "Certifications",
+            "value": 6
+        },
+        {
+            "label": "Years of Experience",
+            "value": 2
+        }
+    ],
+    "timeline": [
+        {
+            "type": "education",
+            "title": "Bachelor's Degree in Computer Science",
+            "organization": "Your University Name",
+            "period": "2019 - 2023",
+            "description": "Focused on Data Structures, Algorithms, Operating Systems and Software Engineering."
+        },
+        {
+            "type": "professional",
+            "title": "Salesforce Developer",
+            "organization": "Your MNC Company",
+            "period": "2024 - Present",
+            "description": "Developing Apex, LWC, Flows and enterprise-grade Salesforce solutions."
+        }
+    ]
 }

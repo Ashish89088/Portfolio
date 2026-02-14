@@ -1,6 +1,6 @@
 export default function Github() {
   return (
-    <section>
+    <div id="open-source">
       <h2>Open Source & Contributions</h2>
 
       <img
@@ -15,6 +15,6 @@ export default function Github() {
         alt="GitHub graph"
         style={{ width: "100%", marginTop: "30px" }}
         /> */}
-    </section>
+    </div>
   );
 }

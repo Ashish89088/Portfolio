@@ -33,7 +33,7 @@ export default function Projects({ projects = [] }) {
 
           {/* GitHub link (optional) */}
           {project.github && (
-            <div style={{ marginTop: "10px" }}>
+            <div style={{ marginTop: "25px" }}>
               <a
                 href={project.github}
                 target="_blank"
