@@ -1,28 +1,30 @@
 export default function Projects() {
   return (
-    <section>
-      <h2>Projects</h2>
+    <section id="projects">
+      <h2>Selected Work</h2>
 
-      <div className="card">
-        <h3>MiniRedis (C++)</h3>
+      <div className="project-card">
+        <h3>MiniRedis — In-Memory Key Value Store</h3>
         <p>
-          Built an in-memory key-value store supporting SET, GET, DEL,
-          TTL expiry, and LRU cache implementation.
+          Built a Redis-inspired in-memory database in C++ supporting SET, GET, DEL,
+          TTL expiration, and LRU eviction. Focused on hashing strategies,
+          memory management, and performance tradeoffs.
         </p>
       </div>
 
-      <div className="card">
-        <h3>Hospital Admin Dashboard (MERN)</h3>
+      <div className="project-card">
+        <h3>Hospital Admin Dashboard — MERN Stack</h3>
         <p>
-          Admin dashboard enabling patients to find nearest hospitals,
-          book consultations, and schedule lab tests.
+          Designed and implemented a scalable hospital search and booking platform.
+          Built REST APIs and optimized MongoDB queries for real-time data retrieval.
         </p>
       </div>
 
-      <div className="card">
-        <h3>Salesforce Flight Check-In Flow</h3>
+      <div className="project-card">
+        <h3>Flight Check-in Automation — Salesforce</h3>
         <p>
-          Auto-launched flow validating booking PNR and flight check-in timing logic.
+          Developed an Auto-Launched Flow validating booking PNR and enforcing
+          time-based check-in logic to improve operational efficiency.
         </p>
       </div>
     </section>

@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section>
+    <section id="contact">
       <h2>Contact Me</h2>
       <p>Email: ashish@email.com</p>
       <p>LinkedIn: linkedin.com/in/ashish</p>
