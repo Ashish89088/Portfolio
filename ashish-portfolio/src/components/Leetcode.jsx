@@ -15,7 +15,7 @@ export default function Leetcode() {
   const username = "ashishsah89088"; // replace this
 
   return (
-    <section id="competetive">
+    <div id="leetcode">
       <h2>Problem Solving & Contest Performance</h2>
 
       {/* Main Stats Card */}
@@ -24,9 +24,9 @@ export default function Leetcode() {
           isDark ? "dark" : "light"
         }&font=Karma&ext=contest`}
         alt="LeetCode Stats"
-        style={{ width: "100%", marginTop: "30px" }}
+        style={{ width: "60%" }}
       />
       
-    </section>
+    </div>
   );
 }

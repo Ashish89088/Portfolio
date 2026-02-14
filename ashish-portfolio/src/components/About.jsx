@@ -1,4 +1,6 @@
-export default function About({ about }) {
+import Stats from "./Stats";
+
+export default function About({ about,stats }) {
   if (!about) return null;
 
   const { name, headline, description, resume, cta } = about;
@@ -12,6 +14,8 @@ export default function About({ about }) {
       <p style={{ marginTop: "15px", maxWidth: "600px" }}>
         {description}
       </p>
+
+      <Stats stats={stats}/>
 
       <div style={{ marginTop: "25px", display: "flex", gap: "15px" }}>
         {/* Primary CTA */}
