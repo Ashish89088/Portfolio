@@ -1,32 +1,51 @@
-export default function Projects() {
+export default function Projects({ projects = [] }) {
   return (
     <section id="projects">
-      <h2>Selected Work</h2>
+      <h2>Personal Projects</h2>
 
-      <div className="project-card">
-        <h3>MiniRedis — In-Memory Key Value Store</h3>
-        <p>
-          Built a Redis-inspired in-memory database in C++ supporting SET, GET, DEL,
-          TTL expiration, and LRU eviction. Focused on hashing strategies,
-          memory management, and performance tradeoffs.
-        </p>
-      </div>
+      {projects.map((project) => (
+        <div key={project.id} className="project-card">
+          <h3>
+            {project.title}
+            {project.subtitle && ` — ${project.subtitle}`}
+          </h3>
 
-      <div className="project-card">
-        <h3>Hospital Admin Dashboard — MERN Stack</h3>
-        <p>
-          Designed and implemented a scalable hospital search and booking platform.
-          Built REST APIs and optimized MongoDB queries for real-time data retrieval.
-        </p>
-      </div>
+          {/* Description as bullet list */}
+          <ul style={{ marginTop: "10px" }}>
+            {project.description.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
 
-      <div className="project-card">
-        <h3>Flight Check-in Automation — Salesforce</h3>
-        <p>
-          Developed an Auto-Launched Flow validating booking PNR and enforcing
-          time-based check-in logic to improve operational efficiency.
-        </p>
-      </div>
+          {/* Tech Stack */}
+          {project.tech?.length > 0 && (
+            <div style={{ marginTop: "10px" }}>
+              {project.tech.map((techItem, index) => (
+                <span
+                  key={index}
+                  className="tech-badge"
+                >
+                  {techItem}
+                </span>
+              ))}
+            </div>
+          )}
+
+          {/* GitHub link (optional) */}
+          {project.github && (
+            <div style={{ marginTop: "10px" }}>
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary"
+              >
+                View Code
+              </a>
+            </div>
+          )}
+        </div>
+      ))}
     </section>
   );
 }

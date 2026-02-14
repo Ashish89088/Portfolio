@@ -1,0 +1,146 @@
+{
+    "navbar": {
+        "sectionList": [
+            {
+                "id": "about",
+                "label": "About"
+            },
+            {
+                "id": "projects",
+                "label": "Projects"
+            },
+            {
+                "id": "performance",
+                "label": "Performance"
+            },
+            {
+                "id": "contact",
+                "label": "Contact"
+            }
+        ]
+    },
+    "about": {
+        "name": "Ashish Sah",
+        "headline": "Salesforce Developer | C++ System Builder | MERN Engineer",
+        "description": "I build scalable backend systems and automation-driven CRM solutions. Currently working as a Salesforce Developer in an MNC, with strong foundations in data structures, system design, and performance-focused engineering.",
+        "resume": {
+            "path": "/My_Resume_2026.pdf",
+            "filename": "My_Resume_2026.pdf"
+        },
+        "cta": {
+            "primary": {
+                "label": "View Projects",
+                "link": "#projects"
+            },
+            "secondary": [
+                {
+                    "label": "Download Resume",
+                    "type": "download"
+                },
+                {
+                    "label": "View Resume",
+                    "type": "view"
+                }
+            ]
+        }
+    },
+    "experience": [
+        {
+            "id": 1,
+            "role": "Backend Developer Intern",
+            "company": "Tech Company",
+            "duration": "Jan 2024 - Jun 2024",
+            "description": [
+                "Built scalable REST APIs",
+                "Optimized DB queries reducing latency by 30%",
+                "Implemented caching layer"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "MiniRedis",
+            "subtitle": "In-Memory Key Value Store",
+            "description": [
+                "Built a Redis-inspired in-memory database in C++",
+                "Implemented SET, GET, DEL operations",
+                "Added TTL expiration and LRU eviction",
+                "Focused on hashing strategies and memory optimization"
+            ],
+            "tech": [
+                "C++",
+                "Networking",
+                "Concurrency"
+            ],
+            "github": "https://github.com/ashish/miniredis"
+        },
+        {
+            "id": 2,
+            "title": "Hospital Admin Dashboard",
+            "subtitle": "MERN Stack",
+            "description": [
+                "Designed scalable hospital search and booking platform",
+                "Built REST APIs using Node & Express",
+                "Optimized MongoDB queries for real-time retrieval"
+            ],
+            "tech": [
+                "MongoDB",
+                "Express",
+                "React",
+                "Node.js"
+            ],
+            "github": "https://github.com/ashish/adminDashboard"
+        }
+    ],
+    "certifications": [
+        {
+            "id": 1,
+            "title": "AWS Certified Cloud Practitioner",
+            "organization": "Amazon Web Services",
+            "date": "2024",
+            "credentials": "37643uddsk7i",
+            "link": "https://example.com"
+        }
+    ],
+    "metrics": [
+        {
+            "id": 1,
+            "value": "40%+",
+            "description": "Reduction in CRM automation execution time using optimized Apex logic."
+        },
+        {
+            "id": 2,
+            "value": "10k+",
+            "description": "Records processed efficiently using bulkified triggers and flow design."
+        },
+        {
+            "id": 3,
+            "value": "O(1)",
+            "description": "Average lookup time achieved in MiniRedis using hash-based storage."
+        },
+        {
+            "id": 4,
+            "value": "LRU",
+            "description": "Implemented LRU eviction to maintain memory efficiency in in-memory store."
+        }
+    ],
+    "contact": {
+        "name": "Ashish Sah",
+        "headline": "Open to backend, systems, and high-performance engineering roles.",
+        "email": "ashish@email.com",
+        "socials": {
+            "linkedin": "https://linkedin.com/in/ashish",
+            "github": "https://github.com/ashish",
+            "twitter": "https://twitter.com/ashish"
+        },
+        "phone": "+91 933-047-6345",
+        "availability": "Available for full-time and contract opportunities worldwide."
+    },
+    "skills": {
+    "languages": ["C++", "JavaScript", "Python"],
+    "backend": ["Node.js", "Express", "REST APIs"],
+    "databases": ["MySQL", "Redis", "MongoDB"],
+    "tools": ["Git", "Docker", "Linux"]
+  }
+}
