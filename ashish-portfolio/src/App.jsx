@@ -1,4 +1,4 @@
-import Hero from "./components/Hero";
+import About from "./components/About";
 import Projects from "./components/Project";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
@@ -11,13 +11,17 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <About />
       <Experience />
       <Projects />
       <Metrics />
       <Github />
       <Leetcode />
-      <Contact />
+      <Contact
+        email="ashish@email.com"
+        linkedin="https://linkedin.com/in/ashish"
+        github="https://github.com/ashish"
+      />
     </>
   );
 }

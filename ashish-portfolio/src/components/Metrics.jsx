@@ -1,6 +1,6 @@
 export default function Metrics() {
   return (
-    <section>
+    <section id="metrics">
       <h2>Performance & Impact</h2>
 
       <div className="metrics-grid">
