@@ -3,6 +3,9 @@
   --text: #111111;
   --muted: #6b7280;
   --border: #e5e7eb;
+  --tech-badge: #eeeeee;
+  --sec-btn-bg: #111827;
+  --sec-btn-text: #F9FAFB;
 }
 
 html {
@@ -18,6 +21,9 @@ body.dark {
   --text: #f9fafb;
   --muted: #9ca3af;
   --border: #1f2937;
+  --tech-badge: #333333;
+  --sec-btn-bg: #F9FAFB ;
+  --sec-btn-text: #111827;
 }
 
 /* Base Styles */
@@ -79,9 +85,9 @@ p {
 
 .btn-secondary {
   padding: 10px 20px;
-  background: #111827;
-  color: white;
-  border-radius: 6px;
+  background: var(--sec-btn-bg);
+  color: var(--sec-btn-text);
+  border-radius: 0px;
   text-decoration: none;
 }
 
@@ -179,4 +185,97 @@ p {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   font-size: 14px;
   opacity: 0.6;
+}
+
+.tech-badge {
+  margin-right: "8px";
+  padding: "4px 8px";
+  background: var(--tech-badge);
+  border-radius: "6px";
+  font-size: "12px";
+}
+
+.certifications {
+  padding: 80px 40px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.cert-card {
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  transition: 0.3s ease;
+  background-color: var(--bg-color);
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+}
+
+.cert-org,
+.cert-credentials {
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+.cert-date {
+  font-size: 14px;
+  opacity: 0.6;
+  margin-top: 5px;
+}
+
+.cert-link {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.cert-link:hover {
+  opacity: 0.6;
+}
+
+.skills {
+  padding: 80px 40px;
+}
+
+.skills-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skill-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.skill-category-title {
+  min-width: 140px;
+  font-weight: 600;
+  text-transform: capitalize;
+  opacity: 0.8;
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+body.dark .skill-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }

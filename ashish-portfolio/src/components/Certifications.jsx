@@ -9,6 +9,7 @@ export default function Certifications({ certifications }) {
             <h3>{cert.title}</h3>
             <p className="cert-org">{cert.organization}</p>
             <p className="cert-date">{cert.date}</p>
+            <p className="cert-credentials">{cert.credentials}</p>
 
             {cert.link && (
               <a

@@ -1,15 +1,25 @@
-export default function Experience() {
+export default function Experience({ experience = [] }) {
   return (
-    <section>
+    <section id="experience">
       <h2>Experience</h2>
 
-      <div className="project-card">
-        <h3>Salesforce Developer — MNC</h3>
-        <p>
-          Built Apex triggers, Lightning Web Components, and automated flows.
-          Integrated REST APIs and optimized CRM workflows for scalability and reliability.
-        </p>
-      </div>
+      {experience.map((job) => (
+        <div key={job.id} className="project-card">
+          <h3>
+            {job.role} — {job.company}
+          </h3>
+
+          <p style={{ fontStyle: "italic", marginBottom: "10px" }}>
+            {job.duration}
+          </p>
+
+          <ul>
+            {job.description.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </section>
   );
 }

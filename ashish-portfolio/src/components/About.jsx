@@ -1,26 +1,37 @@
-export default function Hero() {
+export default function About({ about }) {
+  if (!about) return null;
+
+  const { name, headline, description, resume, cta } = about;
+
   return (
     <section id="about">
-      <h1>Hi, I’m Ashish.</h1>
-      <h3>Salesforce Developer | C++ System Builder | MERN Engineer</h3>
+      <h1>Hi, I’m {name}.</h1>
+
+      <h3>{headline}</h3>
 
       <p style={{ marginTop: "15px", maxWidth: "600px" }}>
-        I build scalable backend systems and automation-driven CRM solutions.
-        Currently working as a Salesforce Developer in an MNC, with strong
-        foundations in data structures, system design, and performance-focused engineering.
+        {description}
       </p>
 
       <div style={{ marginTop: "25px", display: "flex", gap: "15px" }}>
-        <a href="#projects" className="btn">
-          View Projects
+        {/* Primary CTA */}
+        <a href={cta.primary.link} className="btn">
+          {cta.primary.label}
         </a>
 
-        <a href="/My_Resume_2026.pdf" download className="btn-secondary">
-          Download Resume
-        </a>
-        <a href="/My_Resume_2026.pdf" target="_blank" className="btn-secondary">
-          View Resume
-        </a>
+        {/* Secondary CTAs */}
+        {cta.secondary.map((item, index) => (
+          <a
+            key={index}
+            href={resume.path}
+            className="btn-secondary"
+            {...(item.type === "download"
+              ? { download: resume.filename }
+              : { target: "_blank", rel: "noopener noreferrer" })}
+          >
+            {item.label}
+          </a>
+        ))}
       </div>
     </section>
   );

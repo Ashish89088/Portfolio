@@ -1,39 +1,11 @@
-// import { useState, useEffect } from "react";
-
-// export default function Navbar() {
-//   const [darkMode, setDarkMode] = useState(false);
-
-//   useEffect(() => {
-//     if (darkMode) {
-//       document.body.classList.add("dark");
-//     } else {
-//       document.body.classList.remove("dark");
-//     }
-//   }, [darkMode]);
-
-//   return (
-//     <div className="navbar">
-//       <div className="nav-links">
-//         <a href="#projects">Projects</a>
-//         <a href="#contact">Contact</a>
-//         <a href="#about">About</a>
-//         <a href="#metrics">Performance</a>
-//         <a href="#contact">Contact</a>
-//       </div>
-//       <button className="btn" onClick={() => setDarkMode(!darkMode)}>
-//         {darkMode ? "Light Mode" : "Dark Mode"}
-//       </button>
-//     </div>
-//   );
-// }
-
 import { useEffect, useState } from "react";
 
-export default function Navbar() {
+export default function Navbar(props) {
   const [active, setActive] = useState("");
   const [isDark, setIsDark] = useState(
     document.body.classList.contains("dark")
   );
+  const sectionList = props?.navbar?.sectionList || [];
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -62,18 +34,15 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-left">
-        <a href="#about" className={active === "about" ? "active" : ""}>
-          About
-        </a>
-        <a href="#projects" className={active === "projects" ? "active" : ""}>
-          Projects
-        </a>
-        <a href="#metrics" className={active === "metrics" ? "active" : ""}>
-          Performance
-        </a>
-        <a href="#contact" className={active === "contact" ? "active" : ""}>
-          Contact
-        </a>
+        {sectionList.map(({ id, label }) => (
+          <a
+            key={id}
+            href={`#${id}`}
+            className={active === id ? "active" : ""}
+          >
+            {label}
+          </a>
+        ))}
       </div>
 
       <button className="theme-toggle btn" onClick={toggleDarkMode}>
