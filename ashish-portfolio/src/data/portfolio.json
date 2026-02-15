@@ -26,10 +26,6 @@
                 "label": "Certifications"
             },
             {
-                "id": "metrics",
-                "label": "Metrics"
-            },
-            {
                 "id": "competitive",
                 "label": "Competitive"
             }
@@ -124,7 +120,8 @@
             "organization": "Salesforce",
             "date": "02/2026  -  02/2027",
             "credentials": "7442508",
-            "link": "https://sforce.co/verifycerts"
+            "link": "https://sforce.co/verifycerts",
+            "file": "/certificates/salesforce-platform-developer.jpg"
         },
         {
             "id": 2,
@@ -132,7 +129,8 @@
             "organization": "Salesforce",
             "date": "05/2024  -  05/2027",
             "credentials": "4559437",
-            "link": "https://sforce.co/verifycerts"
+            "link": "https://sforce.co/verifycerts",
+            "file": "/certificates/salesforce-admin.jpg"
         },
         {
             "id": 3,
@@ -140,7 +138,8 @@
             "organization": "Salesforce",
             "date": "08/2024  -  Present",
             "credentials": "4794770",
-            "link": "https://sforce.co/verifycerts"
+            "link": "https://sforce.co/verifycerts",
+            "file": "/certificates/salesforce-ai-associate.jpg"
         },
         {
             "id": 4,
@@ -148,7 +147,8 @@
             "organization": "IBM",
             "date": "06/2022  -  Present",
             "credentials": "",
-            "link": ""
+            "link": "",
+            "file": "/certificates/IBM_CERTIFICATE.png"
         },
         {
             "id": 5,
@@ -156,7 +156,8 @@
             "organization": "FreeCodeCamp.org",
             "date": "01/2023  -  Present",
             "credentials": "",
-            "link": "https://www.freecodecamp.org/certification/ashish_sah/responsive-web-design"
+            "link": "https://www.freecodecamp.org/certification/ashish_sah/responsive-web-design",
+            "file": "/certificates/responsive-web-design-certificate.jpg"
         }
     ],
     "metrics": [
@@ -184,11 +185,10 @@
     "footer": {
         "name": "Ashish Sah",
         "headline": "Open to backend, systems, and high-performance engineering roles.",
-        "email": "ashish@email.com",
+        "email": "g.44.ashishsah@email.com",
         "socials": {
-            "linkedin": "https://linkedin.com/in/ashish",
-            "github": "https://github.com/ashish",
-            "twitter": "https://twitter.com/ashish"
+            "linkedin": "https://www.linkedin.com/in/ashish-sah-691a851b1/",
+            "github": "https://github.com/Ashish89088"
         },
         "phone": "+91 933-047-6345",
         "availability": "Available for full-time and contract opportunities worldwide."
@@ -230,15 +230,15 @@
         "links": [
             {
                 "label": "Email Me",
-                "url": "mailto:ashishyouremail@gmail.com"
+                "url": "mailto:g.44.ashishsah@gmail.com"
             },
             {
                 "label": "LinkedIn",
-                "url": "https://www.linkedin.com/in/your-linkedin"
+                "url": "https://www.linkedin.com/in/ashish-sah-691a851b1/"
             },
             {
                 "label": "GitHub",
-                "url": "https://github.com/your-github"
+                "url": "https://github.com/Ashish89088"
             }
         ]
     },
@@ -247,18 +247,23 @@
         "competitiveProfiles": [
             {
                 "platform": "LeetCode",
-                "username": "your-username",
-                "url": "https://leetcode.com/your-username"
+                "description": "Solved 550+ DSA Problems. 1726 Contest Rating",
+                "url": "https://leetcode.com/u/ashishsah89088/"
             },
             {
                 "platform": "GeeksforGeeks",
-                "username": "your-username",
-                "url": "https://auth.geeksforgeeks.org/user/your-username"
+                "description": "Solved 85+ DSA Problems.",
+                "url": "https://www.geeksforgeeks.org/profile/ashishsah89088"
             },
             {
-                "platform": "CodeStudio",
-                "username": "your-username",
-                "url": "https://www.codingninjas.com/codestudio/profile/your-username"
+                "platform": "CodeForces",
+                "description": "Solved 30+ DSA Problems",
+                "url": "https://codeforces.com/profile/ashishsah8908"
+            },
+            {
+                "platform": "CodeChef",
+                "description": "Solved 124+ DSA Problems. 1241 Contest Rating",
+                "url": "https://www.codechef.com/users/ashishsah89088"
             }
         ],
         "hackathonTitle": "Hackathons & Projects",
@@ -266,20 +271,15 @@
             {
                 "name": "Gemini 3 Hackathon",
                 "description": "Built AI-powered system solving real-world career matching problems.",
-                "url": "https://devpost.com/your-project"
+                "url": "https://devpost.com/software/pathfinder-ai-d60gcq?ref_content=my-projects-tab&ref_feature=my_projects"
             }
         ],
         "communityTitle": "Community & Learning",
         "communityProfiles": [
             {
-                "platform": "Stack Overflow",
-                "username": "your-id",
-                "url": "https://stackoverflow.com/users/your-id"
-            },
-            {
                 "platform": "freeCodeCamp",
-                "username": "your-username",
-                "url": "https://www.freecodecamp.org/your-username"
+                "description": "ashish_sah",
+                "url": "https://www.freecodecamp.org/ashish_sah"
             }
         ]
     },
@@ -303,18 +303,18 @@
     ],
     "timeline": [
         {
-            "type": "education",
-            "title": "Bachelor's Degree in Computer Science",
-            "organization": "Your University Name",
-            "period": "2019 - 2023",
-            "description": "Focused on Data Structures, Algorithms, Operating Systems and Software Engineering."
-        },
-        {
             "type": "professional",
-            "title": "Salesforce Developer",
-            "organization": "Your MNC Company",
+            "title": "Associate Software Engineer",
+            "organization": "IBM",
             "period": "2024 - Present",
             "description": "Developing Apex, LWC, Flows and enterprise-grade Salesforce solutions."
+        },
+        {
+            "type": "education",
+            "title": "Bachelor's Degree in Electrical & Electronics Engineering",
+            "organization": "Institute of Engineering and Management",
+            "period": "2019 - 2023",
+            "description": "Focused on Data Structures, Algorithms, Operating Systems and Software Engineering."
         }
     ]
 }

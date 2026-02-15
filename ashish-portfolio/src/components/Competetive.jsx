@@ -26,7 +26,7 @@ export default function Competitive({ competitive }) {
             className="competitive-card"
           >
             <strong>{profile.platform}</strong>
-            <p>{profile.username}</p>
+            <p>{profile.description}</p>
           </a>
         ))}
       </div>
@@ -60,7 +60,7 @@ export default function Competitive({ competitive }) {
             className="competitive-card"
           >
             <strong>{profile.platform}</strong>
-            <p>{profile.username}</p>
+            <p>{profile.description}</p>
           </a>
         ))}
       </div>
