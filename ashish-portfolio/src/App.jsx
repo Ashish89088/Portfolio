@@ -17,13 +17,13 @@ function App() {
     <>
       <Navbar navbar={portfolio.navbar} />
       <About about={portfolio.about} stats={portfolio.stats} />
-      {/* <Timeline timeline={portfolio.timeline} /> */}
+      <Timeline timeline={portfolio.timeline} />
       <Contact contact={portfolio.contact} />
       <Skills skills={portfolio.skills} />
       <Experience experience={portfolio.experience} />
       <Projects projects={portfolio.projects} />
       <Certifications certifications={portfolio.certifications} />
-      <Metrics metrics={portfolio.metrics} />
+      {/* <Metrics metrics={portfolio.metrics} /> */}
       <Competitive competitive={portfolio.competitive} />
       <Footer footer={portfolio.footer}/>
       {/* <Certifications certifications={portfolio.certifications} /> */}
