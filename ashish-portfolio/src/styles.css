@@ -470,9 +470,20 @@ body.dark .skill-row {
   margin-top: 6px;
 }
 
-/* ============================= */
-/* 📱 TABLET (<= 1024px) */
-/* ============================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--text);
+  transition: 0.3s ease;
+}
+
 @media (max-width: 1024px) {
 
   section {
@@ -497,12 +508,7 @@ body.dark .skill-row {
   }
 }
 
-/* ============================= */
-/* 📱 MOBILE (<= 768px) */
-/* ============================= */
 @media (max-width: 768px) {
-
-  /* General */
   section {
     padding: 70px 20px;
   }
@@ -520,7 +526,6 @@ body.dark .skill-row {
     font-size: 0.95rem;
   }
 
-  /* Navbar */
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -531,19 +536,35 @@ body.dark .skill-row {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: var(--bg);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-left.show {
+    max-height: 500px;
   }
 
   .nav-left a {
-    margin-left: 0;
+    margin: 12px 0;
+    font-size: 1rem;
   }
 
-  /* Metrics */
   .metrics-grid {
     grid-template-columns: 1fr;
     gap: 25px;
   }
 
-  /* Skills */
   .skill-row {
     flex-direction: column;
     gap: 10px;
@@ -553,7 +574,6 @@ body.dark .skill-row {
     min-width: auto;
   }
 
-  /* Certifications */
   .certifications {
     padding: 60px 20px;
   }
@@ -562,7 +582,6 @@ body.dark .skill-row {
     grid-template-columns: 1fr;
   }
 
-  /* Competitive */
   .competitive-links {
     flex-direction: column;
   }
@@ -571,19 +590,16 @@ body.dark .skill-row {
     width: 100%;
   }
 
-  /* Contact */
   .contact-info {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  /* Footer */
   .footer-container {
     flex-direction: column;
     gap: 30px;
   }
 
-  /* Timeline – Switch to Vertical */
   .timeline-container::before {
     left: 20px;
   }
@@ -607,16 +623,21 @@ body.dark .skill-row {
     background: rgba(31, 41, 55, 0.9);
   }
 
-  /* Stats */
   .stats-container {
     flex-direction: column;
     gap: 25px;
   }
+    .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }  
 }
 
-/* ============================= */
-/* 📱 SMALL MOBILE (<= 480px) */
-/* ============================= */
 @media (max-width: 480px) {
 
   section {
@@ -630,15 +651,12 @@ body.dark .skill-row {
   .btn,
   .btn-secondary,
   .contact-link {
-    width: 100%;
+    width: 85%;
     text-align: center;
   }
 
   .theme-toggle {
     width: fit-content;
-  }
-  .timeline-section {
-    padding: 20px;
   }
   .skills {
     padding: 20px;
@@ -656,68 +674,24 @@ body.dark .skill-row {
   .stat-card h2 {
     margin: 0px auto;
   }
+  .timeline-section {
+    padding: 20px;
+  }
   .timeline-heading {
     margin-bottom: 0px;
+  }
+  .timeline-item {
+    padding-right: 0px;
+    max-width: 85%;
   }
   .contact {
     padding: 20px;
   }
-}
-
-/* ============================= */
-/* Hamburger Styles */
-/* ============================= */
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: var(--text);
-  transition: 0.3s ease;
-}
-
-/* Mobile Nav */
-@media (max-width: 768px) {
-
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  .competitive-card {
+    width: 85%;
   }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .nav-left {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: var(--bg);
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-    border-top: 1px solid var(--border);
-
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-
-  .nav-left.show {
-    max-height: 500px;
-  }
-
-  .nav-left a {
-    margin: 12px 0;
-    font-size: 1rem;
+  .nav-left  {
+    display: none;
   }
 }
 
